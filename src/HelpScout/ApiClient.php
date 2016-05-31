@@ -46,7 +46,7 @@ final class ApiClient {
 	 */
 	public static function getInstance() {
 		if (self::$instance === false) {
-			self::$instance = new ApiClient();
+			self::$instance = new static();
 		}
 		return self::$instance;
 	}
